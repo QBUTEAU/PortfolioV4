@@ -1,0 +1,60 @@
+[
+    {
+        "title": "GreenScore",
+        "date": "De février à avril 2024",
+        "technologies": [
+            "fa-vuejs",
+            "fa-html5",
+            "fa-sass",
+            "fa-square-js"
+        ],
+        "description": "Projet universitaire sur la réalisation d'un questionnaire en ligne sur l'écologie, à but lucratif et éducatif. Développé avec le framework Vue.js, il est responsive, français et anglais.",
+        "contributors": [
+            {
+                "name": "Jathushan Selvarajah",
+                "link": "https://mmi22g05.mmi-troyes.fr"
+            },
+            {
+                "name": "Axel Tribondeau",
+                "link": "https://mmi22g11.mmi-troyes.fr/portfolio"
+            },
+            {
+                "name": "Okesse Smith",
+                "link": "http://mmi22g07.mmi-troyes.fr/portfolio"
+            }
+        ],
+        "links": {
+            "project": "https://mmi22c03.sae401.ovh",
+            "github": "https://github.com/QBUTEAU/GreenScore_SAE401"
+        }
+    },
+    {
+        "title": "Mingle.",
+        "date": "Juin 2023",
+        "technologies": [
+            "fa-html5",
+            "fa-css3-alt",
+            "fa-wordpress",
+            "fa-square-js"
+        ],
+        "description": "Site WordPress réalisé dans le but de promouvoir une agence de 5 membres travaillant dans le développement web, le graphisme et la communication, le tout dans la création d'un site web de covoiturage pour la formation MMI de Troyes.",
+        "links": {
+            "project": "https://mmi22c03.sae202.ovh/agence"
+        }
+    },
+    {
+        "title": "Circuit Library",
+        "date": "Mars 2023",
+        "technologies": [
+            "fa-html5",
+            "fa-css3-alt",
+            "fa-php",
+            "fa-database"
+        ],
+        "description": "Site qui met en avant les plus grands circuits automobiles du monde, grâce à une base de données MySQL et un back-end en PHP, qui possède également une partie CRUD conçue pour la gestion de la table. Le site répond au concept 'mobile first'.",
+        "links": {
+            "project": "https://mmi22c03.sae203.ovh",
+            "github": "https://github.com/QBUTEAU/CircuitLibrary_SAE203"
+        }
+    }
+]
