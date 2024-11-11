@@ -20,7 +20,7 @@
           </span>
         </h6>
       </div>
-      <div :class="'realisations-card__liens ' + project.title.toLowerCase().replace(' ', '-').replace('.','')">
+      <div :class="'realisations-card__liens ' + project.class">
         <a v-if="project.links.project" :href="project.links.project" target="_blank" style="margin-right: 35px;">
           <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a>

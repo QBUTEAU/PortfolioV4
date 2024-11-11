@@ -1,0 +1,125 @@
+[
+    {
+        "category": "Front-End",
+        "skills": [
+            {
+                "name": "HTML",
+                "iconClass": "fa-brands fa-html5",
+                "color": "#f06529"
+            },
+            {
+                "name": "CSS",
+                "iconClass": "fa-brands fa-css3-alt",
+                "color": "#2965f1"
+            },
+            {
+                "name": "SCSS",
+                "iconClass": "fa-brands fa-sass",
+                "color": "#cc6699"
+            },
+            {
+                "name": "JS",
+                "iconClass": "fa-brands fa-square-js",
+                "color": "#f0db4f"
+            },
+            {
+                "name": "Vue.js",
+                "iconClass": "fa-brands fa-vuejs",
+                "color": "#42b883"
+            },
+            {
+                "name": "WordPress",
+                "iconClass": "fa-brands fa-wordpress",
+                "color": "#21759b"
+            }
+        ]
+    },
+    {
+        "category": "Back-End",
+        "skills": [
+            {
+                "name": "PHP",
+                "iconClass": "fa-brands fa-php",
+                "color": "#8993be"
+            },
+            {
+                "name": "SQL",
+                "iconClass": "fa-solid fa-database",
+                "color": "#081c7b"
+            },
+            {
+                "name": "Docker",
+                "iconClass": "fa-brands fa-docker",
+                "color": "#0db7ed"
+            },
+            {
+                "name": "Ubuntu",
+                "iconClass": "fa-brands fa-ubuntu",
+                "color": "#e95420"
+            },
+            {
+                "name": "Symfony",
+                "iconClass": "fa-brands fa-symfony",
+                "color": "#414141"
+            },
+            {
+                "name": "Webdev 26",
+                "iconClass": "fas fa-code",
+                "color": "rgb(100, 100, 100)"
+            }
+        ]
+    },
+    {
+        "category": "Microsoft 365",
+        "skills": [
+            {
+                "name": "Word",
+                "iconClass": "fa-solid fa-file-word",
+                "color": "#1B5EBE"
+            },
+            {
+                "name": "PowerPoint",
+                "iconClass": "fa-solid fa-file-powerpoint",
+                "color": "#C13B1B"
+            },
+            {
+                "name": "Excel",
+                "iconClass": "fa-solid fa-file-excel",
+                "color": "#1D6F42"
+            },
+            {
+                "name": "Outlook",
+                "iconClass": "fa-solid fa-envelopes-bulk",
+                "color": "#249EE4"
+            },
+            {
+                "name": "Teams",
+                "iconClass": "fa-solid fa-people-group",
+                "color": "#4f42b5"
+            }
+        ]
+    },
+    {
+        "category": "Autres outils",
+        "skills": [
+            {
+                "name": "GitHub"
+            },
+            {
+                "name": "Unity & C#"
+            },
+            {
+                "name": "Notion"
+            },
+            {
+                "name": "Click Up"
+            },
+            {
+                "name": "Infolog"
+            },
+            {
+                "name": "Service Now"
+            }
+        ]
+    }
+]

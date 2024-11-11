@@ -354,38 +354,24 @@ p {
 }
 
 .cv {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
-    gap: 20px;
-    list-style: none;
-    padding: 0;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    text-align: center;
+    width: max-content;
+    border: 2px $rouge solid;
+    border-radius: 20px;
+    padding: 8px 30px;
+    font-weight: bold;
+    color: $blanc;
+    background-color: $noir;
+    font-family: 'Montserrat';
+    transition: 0.25s;
+    text-decoration: none;
+    display: block;
 
-    li {
-        cursor: pointer;
-        text-align: center;
-        width: max-content;
-        border: 2px $rouge solid;
-        border-radius: 20px;
-        padding: 8px 30px;
-        font-weight: bold;
-        color: $blanc;
-        background-color: $noir;
-        font-family: 'Montserrat';
-        transition: 0.25s;
-        text-decoration: none;
-        display: block;
-
-        a {
-            color: $blanc;
-            text-decoration: none;
-            transition: 0.25s;
-        }
-
-        &:hover {
-            background-color: $rouge;
-        }
+    &:hover {
+        background-color: $rouge;
     }
 }
 
@@ -542,7 +528,7 @@ p {
 }
 
 
-$list_projet: mingle, circuit-library, greenscore;
+$list_projet: mingle, greenscore, speeddocker;
 
 @each $projet in $list_projet {
     .#{$projet} {
@@ -574,7 +560,7 @@ $list_projet: mingle, circuit-library, greenscore;
 
 /* -------------------- AUTRES REALISATIONS -------------------- */
 
-$list-autres: unity, webdoc, styleselector, sae303, formula-pedia;
+$list-autres: unity, webdoc, styleselector, sae303, formula-pedia, circuit-library;
 
 @each $autres in $list-autres {
     .#{$autres} {
@@ -794,13 +780,13 @@ footer {
 /* -------------------- NTH CHILD -------------------- */
 
 @media screen and (min-width:990px) {
-    .realisations__card:nth-child(odd) .realisations-card__liens {
+    .realisations__card:nth-child(even) .realisations-card__liens {
         border-radius: 27px 0 0 27px;
         grid-row: 1;
         border-left: 0;
     }
 
-    .realisations__card:nth-child(odd) .realisations-card__legende {
+    .realisations__card:nth-child(even) .realisations-card__legende {
         border-radius: 0 27px 27px 0;
         border-left: 3px $rouge solid;
     }

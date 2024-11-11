@@ -1,9 +1,9 @@
 <script setup>
-  import { ref, onMounted } from 'vue';
-  import './assets/js/script.js';
-  // import Competences from './components/Competences.vue';
-  import Realisations from './components/Realisations.vue';
-  import AutresRealisations from './components/AutresRealisations.vue';
+import { ref, onMounted } from 'vue';
+import './assets/js/script.js';
+import Competences from './components/Competences.vue';
+import Realisations from './components/Realisations.vue';
+import AutresRealisations from './components/AutresRealisations.vue';
 </script>
 
 
@@ -47,19 +47,16 @@
     <div id="apropos">
       <div class="apropos__contenu">
         <h2>À propos de moi</h2>
-        <p>Bienvenue sur mon portfolio ! Je suis Quentin, j'ai 19 ans et je suis en troisième
+        <p>Bienvenue sur mon portfolio ! Je suis Quentin, j'ai 20 ans et je suis en troisième
           année d'un BUT Métiers du Multimédia et de l'Internet au sein de l'IUT de Troyes.
           Ma passion pour le développement web a débuté au lycée, où j'ai pu découvrir les
           langages HTML, CSS et SQL en cours de spécialité Numériques et Sciences Informatiques
-          pendant de mon Baccalauréat Général.
-          Je suis actuellement à la recherche d'une alternance dans le développement web, d'une durée
-          d'un an, à compter de septembre 2024.
+          pendant mon Baccalauréat Général.
+          Je suis actuellement à la recherche d'un stage dans le développement web, d'une durée
+          minimal de 18 semaines, à compter du 31 mars 2025.
           Je suis également passionné par le sport, la photo, le cinéma et les sports mécaniques.
         </p>
-        <ul class="cv">
-          <li><a href="http://qbuteau.fr/ressources/QBUTEAU_CV.pdf" target="_blank">MON CV</a></li>
-          <li><a href="http://qbuteau.fr/ressources/QBUTEAU_CV-N&B.pdf" target="_blank">MON CV - N&B</a></li>
-        </ul>
+        <a class="cv" href="http://qbuteau.fr/ressources/QBUTEAU_CV.pdf" target="_blank">MON CV</a>
       </div>
       <div class="apropos__photo">
       </div>
@@ -75,17 +72,15 @@
 
     <div class="autres-realisations">
       <h2>Autres Réalisations</h2>
-        <AutresRealisations />
+      <AutresRealisations />
     </div>
 
     <div id="travaux_mmi" class="travaux_mmi">
       <h2>MES TRAVAUX EN BUT MMI</h2>
       <p>Portfolios universitaires (.pdf)</p>
       <div>
-        <a class="liens_travaux" href="http://qbuteau.fr/portfolio/QBUTEAU_BUT1.pdf" target="_blank">B.U.T.1 (S1
-          & S2)</a>
-        <a class="liens_travaux" href="http://qbuteau.fr/portfolio/QBUTEAU_BUT2.pdf" target="_blank">B.U.T.2 (S3
-          & S4)</a>
+        <a class="liens_travaux" href="http://qbuteau.fr/portfolio/QBUTEAU_BUT1.pdf" target="_blank">B.U.T.1</a>
+        <a class="liens_travaux" href="http://qbuteau.fr/portfolio/QBUTEAU_BUT2.pdf" target="_blank">B.U.T.2</a>
       </div>
       <p>Modules de Développement Front / Intégration</p>
       <ul class="travaux-mmi__modules">
@@ -122,11 +117,6 @@
       <li>
         <a href="https://github.com/QBUTEAU" target="_blank" class="reseaux">
           <i class="fa-brands fa-github"></i>
-        </a>
-      </li>
-      <li>
-        <a onclick="copierTexte()" class="reseaux" id="discord">
-          <i class="fa-brands fa-discord"></i>
         </a>
       </li>
       <li>

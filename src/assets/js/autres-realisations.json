@@ -1,5 +1,19 @@
 [
     {
+        "title": "Circuit Library",
+        "imgClass": "circuit-library",
+        "links": [
+            {
+                "url": "https://mmi22c03.sae203.ovh",
+                "iconClass": "fa-solid fa-arrow-up-right-from-square"
+            },
+            {
+                "url": "https://github.com/QBUTEAU/CircuitLibrary_SAE203",
+                "iconClass": "fa-brands fa-github"
+            }
+        ]
+    },
+    {
         "title": "Jeu sur Unity",
         "imgClass": "unity",
         "links": [
@@ -23,20 +37,6 @@
             },
             {
                 "url": "https://github.com/QBUTEAU/WebDocumentaire",
-                "iconClass": "fa-brands fa-github"
-            }
-        ]
-    },
-    {
-        "title": "Dataviz",
-        "imgClass": "sae303",
-        "links": [
-            {
-                "url": "https://mmi22c03.mmi-troyes.fr/sae303",
-                "iconClass": "fa-solid fa-arrow-up-right-from-square"
-            },
-            {
-                "url": "https://github.com/QBUTEAU/Vehicules-Electriques_SAE303",
                 "iconClass": "fa-brands fa-github"
             }
         ]
