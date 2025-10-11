@@ -1,0 +1,26 @@
+[
+    {
+        "title": "IUT de Troyes",
+        "location": "Troyes (10)",
+        "date": "2022 - 2025",
+        "desc": "B.U.T. Métiers du Multimédia et de l'Internet (MMI)"
+    },
+    {
+        "title": "Groupe LARBALETIER",
+        "location": "Fontaine-les-Grès (10)",
+        "date": "Avril - Août 2025",
+        "desc": "Stage de fin d'études en tant que Développeur Web et Web Designer"
+    },
+    {
+        "title": "ITM LEMI Base d'Anais",
+        "location": "Anais (16)",
+        "date": "Avril - Juin 2024",
+        "desc": "Stage d'assistant d'informatique - Programmation logiciels interne, suivi plateforme de tickets, maintenance et interventions."
+    },
+    {
+        "title": "Lycée Joseph Fourier",
+        "location": "Auxerre (89)",
+        "date": "2019 - 2022",
+        "desc": "Baccalauréat Général - Spécialités Mathématiques et Numériques et Sciences Informatiques"
+    }
+]

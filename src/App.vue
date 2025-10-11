@@ -1,9 +1,23 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import './assets/js/script.js';
+import Parcours from './components/Parcours.vue';
 import Competences from './components/Competences.vue';
 import Realisations from './components/Realisations.vue';
 import AutresRealisations from './components/AutresRealisations.vue';
+
+const showPdf = ref(false);
+const pdfUrl = ref('');
+
+function openPdf(file) {
+  // Utilise import.meta.url pour charger depuis assets (Vite)
+  pdfUrl.value = new URL(`./assets/portfolios/${file}`, import.meta.url).href;
+  showPdf.value = true;
+}
+function closePdf() {
+  showPdf.value = false;
+  pdfUrl.value = '';
+}
 </script>
 
 
@@ -32,35 +46,36 @@ import AutresRealisations from './components/AutresRealisations.vue';
     <div id="presentation">
       <div class="presentation__nom-role">
         <h1>Quentin BUTEAU</h1>
-        <h6>Développeur Front-End Junior</h6>
-        <ul class="presentation__reseaux">
-          <li><a href="https://github.com/QBUTEAU" target="_blank"><i class="fa-brands fa-github"></i></a>
-          </li>
-          <li><a href="https://www.linkedin.com/in/quentin-buteau/" target="_blank"><i
-                class="fa-brands fa-linkedin"></i></a></li>
-          <li><a href="http://qbuteau.fr/link" target="_blank"><i class="fa-solid fa-link"></i></a></li>
-        </ul>
+        <h6>Développeur Full-Stack Junior</h6>
       </div>
       <!-- <a href="#apropos"><i class="fa-solid fa-arrow-down" style="color: #fff; font-size: 35px;"></i></a> -->
     </div>
 
+
+    <h2>À propos de moi</h2>
+
     <div id="apropos">
       <div class="apropos__contenu">
-        <h2>À propos de moi</h2>
-        <p>Bienvenue sur mon portfolio ! Je suis Quentin, j'ai 20 ans et je suis en troisième
-          année d'un BUT Métiers du Multimédia et de l'Internet au sein de l'IUT de Troyes.
-          Ma passion pour le développement web a débuté au lycée, où j'ai pu découvrir les
-          langages HTML, CSS et SQL en cours de spécialité Numériques et Sciences Informatiques
-          pendant mon Baccalauréat Général.
-          Je suis actuellement à la recherche d'un stage dans le développement web, d'une durée
-          minimal de 18 semaines, à compter du 31 mars 2025.
-          Je suis également passionné par le sport, la photo, le cinéma et les sports mécaniques.
+        <h3>Qui suis-je ?</h3>
+        <p>Je m'appelle Quentin, j'ai 20 ans et je suis fraîchement diplômé du BUT Métiers du Multimédia et de l'Internet, 
+          obtenu à l'IUT de Troyes. Ma passion pour le développement web a débuté au lycée, lors de la découverte des langages 
+          HTML, CSS et SQL dans le cadre de la spécialité Numérique et Sciences Informatiques de mon Baccalauréat Général. Au cours 
+          de ma formation, j'ai acquis des compétences solides en développement web, design, audiovisuel et gestion de projets 
+          numériques, me permettant d'adopter une approche polyvalente et complète dans mes réalisations. Je suis également passionné
+          par le sport, la photographie, le cinéma ainsi que les sports mécaniques.
         </p>
-        <a class="cv" href="http://qbuteau.fr/ressources/QBUTEAU_CV.pdf" target="_blank">MON CV</a>
+        <div class="apropos-contenu__skills">
+          <span>Organisé</span>
+          <span>Curieux</span>
+          <span>Autonome</span>
+          <span>Esprit d'équipe</span>
+        </div>
       </div>
       <div class="apropos__photo">
       </div>
     </div>
+
+    <Parcours />
 
     <Competences />
 
@@ -70,34 +85,29 @@ import AutresRealisations from './components/AutresRealisations.vue';
     </div>
 
 
-    <div class="autres-realisations">
+    <!-- <div class="autres-realisations">
       <h2>Autres Réalisations</h2>
       <AutresRealisations />
-    </div>
+    </div> -->
 
     <div id="travaux_mmi" class="travaux_mmi">
       <h2>MES TRAVAUX EN BUT MMI</h2>
       <p>Portfolios universitaires (.pdf)</p>
       <div>
-        <a class="liens_travaux" href="http://qbuteau.fr/portfolio/QBUTEAU_BUT1.pdf" target="_blank">B.U.T.1</a>
-        <a class="liens_travaux" href="http://qbuteau.fr/portfolio/QBUTEAU_BUT2.pdf" target="_blank">B.U.T.2</a>
+        <button class="liens_travaux" @click="openPdf('QBUTEAU_BUT1.pdf')">B.U.T.1</button>
+        <button class="liens_travaux" @click="openPdf('QBUTEAU_BUT2.pdf')">B.U.T.2</button>
+        <button class="liens_travaux" @click="openPdf('QBUTEAU_BUT3.pdf')">B.U.T.3</button>
       </div>
-      <p>Modules de Développement Front / Intégration</p>
-      <ul class="travaux-mmi__modules">
-        <li><a class="liens_travaux" href="http://mmi22c03.mmi-troyes.fr/travaux/r112" target="_blank">WR112</a>
-        </li>
-        <li><a class="liens_travaux" href="http://mmi22c03.mmi-troyes.fr/travaux/r212" target="_blank">WR212</a>
-        </li>
-        <li><a class="liens_travaux" href="http://mmi22c03.mmi-troyes.fr/travaux/r312" target="_blank">WR312</a>
-        </li>
-        <li><a class="liens_travaux" href="http://mmi22c03.mmi-troyes.fr/travaux/r312sass" target="_blank">WR312
-            (SCSS)</a></li>
-      </ul>
+      <p>Soutenances de stage (.pdf)</p>
+      <div>
+        <button class="liens_travaux" @click="openPdf('QBUTEAU_StageBUT2.pdf')">Stage B.U.T.2</button>
+        <button class="liens_travaux" @click="openPdf('QBUTEAU_StageBUT3.pdf')">Stage B.U.T.3</button>
+      </div>
     </div>
   </section>
 
   <footer>
-    <div id="copyright">&copy; 2023-2024 - Quentin BUTEAU</div>
+    <div id="copyright">&copy; 2023-2025 - Quentin BUTEAU</div>
     <ul id="liens-contact">
       <li>
         <a href="mailto:buteauquentin10@gmail.com" target="_blank" class="reseaux">
@@ -127,12 +137,71 @@ import AutresRealisations from './components/AutresRealisations.vue';
     </ul>
   </footer>
 
-  <!-- POP UP DE CTRL C CTRL V DU DISCORD -->
-  <div id="copy-popup">
-    L'ID Discord de Quentin a été copié avec succès !
+  <!-- Popup PDF -->
+  <div v-if="showPdf" class="pdf-popup" @click.self="closePdf">
+    <button class="pdf-popup__close" @click="closePdf">&times;</button>
+    <div class="pdf-popup__content">
+      <iframe :src="pdfUrl" width="800" height="600"></iframe>
+    </div>
   </div>
 
 </template>
 
 
-<style scoped></style>
+<style scoped>
+.pdf-popup {
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  background: rgba(30,30,30,0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pdf-popup__content {
+  position: relative;
+  background: #222;
+  border-radius: 12px;
+  padding: 24px 24px 12px 24px;
+  box-shadow: 0 2px 16px #000a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pdf-popup__close {
+  position: fixed;
+  top: 32px;
+  right: 48px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2.5em;
+  cursor: pointer;
+  z-index: 1100;
+  transition: color 0.2s;
+}
+.pdf-popup__close:hover {
+  color: #C0392B;
+}
+.pdf-popup iframe {
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+  max-width: 90vw;
+  max-height: 80vh;
+}
+@media (max-width: 900px) {
+  .pdf-popup iframe {
+    width: 95vw;
+    height: 60vh;
+  }
+  .pdf-popup__content {
+    padding: 10px 2px 2px 2px;
+  }
+  .pdf-popup__close {
+    top: 12px;
+    right: 18px;
+    font-size: 2em;
+  }
+}
+</style>

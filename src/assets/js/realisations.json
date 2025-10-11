@@ -1,17 +1,67 @@
 [
     {
-        "title": "SpeedDocker - LP",
-        "class": "speeddocker",
-        "date": "Septembre 2024 -",
+        "title": "€cobox - Refonte",
+        "class": "ecobox",
+        "date": "Mai 2025 - Août 2025",
         "technologies": [
-            "fa-vuejs",
-            "fa-html5",
-            "fa-sass",
-            "fa-square-js"
+            "Figma",
+            "WordPress"
         ],
-        "description": "Site dit 'Landing Page' promouvant SpeedDocker, un jeu d'arcade développé par mon groupe lors d'un projet d'étude. Le site promeut le groupe et détaille le jeu sur l'ensemble de sa création. Site mis à jour régulièrement.",
+        "description": "Refonte graphique de l'écran de transaction des machines €cobox F1 (algorithmie, maquettages), nouvelle charte graphique et nouvelle interface graphique du site vitrine des €cobox ecobox-pet.fr, le tout pour le Groupe LARBALETIER.",
         "links": {
-            "project": "http://qbuteau.fr/sae501"
+            "figma": "https://www.figma.com/design/C3lYP6U2RwjC1pfOH8eXMR/Maquettes-LARBALETIER?node-id=0-1&t=WfUwC6tdpT1CnQE8-1"
+        }
+    },
+    {
+        "title": "€coportail",
+        "class": "ecoportail",
+        "date": "Avril 2025 - Août 2025",
+        "technologies": [
+            "Symfony",
+            "PHP",
+            "SQL",
+            "HTML",
+            "CSS",
+            "Bootstrap",
+            "JavaScript"
+        ],
+        "description": "Amélioration de l'interface et des fonctionnalités de la partie Interventions du site interne du Groupe LARBALETIER, permettant une meilleure gestion et compréhension des différentes interventions des techniciens et de leurs responsables auprès des machines connectées.",
+        "links": {
+            "link": "#travaux_mmi"
+        }
+    },
+    {
+        "title": "Nuxt Air Quality",
+        "class": "airquality",
+        "date": "Novembre 2025",
+        "technologies": [
+            "Nuxt.js",
+            "HTML",
+            "CSS",
+            "Bootstrap",
+            "JavaScript"
+        ],
+        "description": "Petit projet en Nuxt.js utilisant une API pour afficher la qualité de l'air en temps réel dans différentes communes de France. Permet de rechercher une ville et d'afficher ses données de pollution atmosphérique.",
+        "links": {
+            "project": "https://nuxt-air-quality.vercel.app",
+            "github": "https://github.com/QBUTEAU/Nuxt-AirQuality"
+        }
+    },
+    {
+        "title": "SpeedDocker",
+        "class": "speeddocker",
+        "date": "Septembre 2024 - Janvier 2025",
+        "technologies": [
+            "Vue.js",
+            "HTML",
+            "SCSS",
+            "JavaScript"
+        ],
+        "description": "Site dit 'Landing Page' promouvant SpeedDocker, un jeu d'arcade développé avec mon groupe lors d'un projet d'étude. Le site promeut le groupe et détaille le jeu sur l'ensemble de sa création et mis à jour au fur et à mesure de son avancement. Réalisation de la charte et éléments graphiques présents dans le jeu (c.f. lien Behance).",
+        "links": {
+            "behance": "https://www.behance.net/gallery/218102919/SpeedDocker-Identit-graphique",
+            "github": "https://github.com/QBUTEAU/LandingPage_SpeedDocker",
+            "project": "https://speeddocker.vercel.app"
         }
     },
     {
@@ -19,12 +69,12 @@
         "class": "greenscore",
         "date": "Février 2024 - Avril 2024",
         "technologies": [
-            "fa-vuejs",
-            "fa-html5",
-            "fa-sass",
-            "fa-square-js"
+            "Vue.js",
+            "HTML",
+            "SCSS",
+            "JavaScript"
         ],
-        "description": "Projet universitaire sur la réalisation d'un questionnaire en ligne sur l'écologie, à but lucratif et éducatif. Développé avec le framework Vue.js, il est responsive, français et anglais.",
+        "description": "Projet universitaire sur la réalisation d'un questionnaire en ligne sur l'écologie, à but lucratif et éducatif. Développé avec le framework Vue.js, il est responsive, français et anglais. J'ai réalisé la partie front-end du site.",
         "contributors": [
             {
                 "name": "Jathushan Selvarajah",
@@ -40,23 +90,8 @@
             }
         ],
         "links": {
-            "project": "https://mmi22c03.sae401.ovh",
+            "project": "https://greenscore-sae401.vercel.app",
             "github": "https://github.com/QBUTEAU/GreenScore_SAE401"
-        }
-    },
-    {
-        "title": "Mingle.",
-        "class": "mingle",
-        "date": "Juin 2023",
-        "technologies": [
-            "fa-html5",
-            "fa-css3-alt",
-            "fa-wordpress",
-            "fa-square-js"
-        ],
-        "description": "Site WordPress réalisé dans le but de promouvoir une agence de 5 membres travaillant dans le développement web, le graphisme et la communication, le tout dans la création d'un site web de covoiturage pour la formation MMI de Troyes.",
-        "links": {
-            "project": "https://mmi22c03.sae202.ovh/agence"
         }
     }
 ]
