@@ -107,7 +107,7 @@ function closePdf() {
   </section>
 
   <footer>
-    <div id="copyright">&copy; 2023-2025 - Quentin BUTEAU</div>
+    <div id="copyright">&copy; 2023-2026 - Quentin BUTEAU</div>
     <ul id="liens-contact">
       <li>
         <a href="mailto:buteauquentin10@gmail.com" target="_blank" class="reseaux">
