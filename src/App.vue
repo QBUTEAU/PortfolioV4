@@ -57,7 +57,7 @@ function closePdf() {
     <div id="apropos">
       <div class="apropos__contenu">
         <h3>Qui suis-je ?</h3>
-        <p>Je m'appelle Quentin, j'ai 20 ans et je suis fraîchement diplômé du BUT Métiers du Multimédia et de l'Internet, 
+        <p>Je m'appelle Quentin, j'ai 21 ans et je suis fraîchement diplômé du BUT Métiers du Multimédia et de l'Internet, 
           obtenu à l'IUT de Troyes. Ma passion pour le développement web a débuté au lycée, lors de la découverte des langages 
           HTML, CSS et SQL dans le cadre de la spécialité Numérique et Sciences Informatiques de mon Baccalauréat Général. Au cours 
           de ma formation, j'ai acquis des compétences solides en développement web, design, audiovisuel et gestion de projets 

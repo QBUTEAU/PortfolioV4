@@ -1,5 +1,22 @@
 [
     {
+        "title": "Nuxt Air Quality",
+        "class": "airquality",
+        "date": "Novembre 2025 -",
+        "technologies": [
+            "Nuxt.js",
+            "HTML",
+            "CSS",
+            "Bootstrap",
+            "JavaScript"
+        ],
+        "description": "Petit projet en Nuxt.js utilisant une API pour afficher la qualité de l'air en temps réel dans différentes communes de France. Permet de rechercher une ville et d'afficher ses données de pollution atmosphérique.",
+        "links": {
+            "project": "https://nuxt-air-quality.vercel.app",
+            "github": "https://github.com/QBUTEAU/Nuxt_AirQuality"
+        }
+    },
+    {
         "title": "€cobox - Refonte",
         "class": "ecobox",
         "date": "Mai 2025 - Août 2025",
@@ -28,23 +45,6 @@
         "description": "Amélioration de l'interface et des fonctionnalités de la partie Interventions du site interne du Groupe LARBALETIER, permettant une meilleure gestion et compréhension des différentes interventions des techniciens et de leurs responsables auprès des machines connectées.",
         "links": {
             "link": "#travaux_mmi"
-        }
-    },
-    {
-        "title": "Nuxt Air Quality",
-        "class": "airquality",
-        "date": "Novembre 2025",
-        "technologies": [
-            "Nuxt.js",
-            "HTML",
-            "CSS",
-            "Bootstrap",
-            "JavaScript"
-        ],
-        "description": "Petit projet en Nuxt.js utilisant une API pour afficher la qualité de l'air en temps réel dans différentes communes de France. Permet de rechercher une ville et d'afficher ses données de pollution atmosphérique.",
-        "links": {
-            "project": "https://nuxt-air-quality.vercel.app",
-            "github": "https://github.com/QBUTEAU/Nuxt-AirQuality"
         }
     },
     {
